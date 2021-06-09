@@ -1,0 +1,104 @@
+img {
+  top: 65%;
+  left: 50%;
+  width: 620px;
+  height: 340px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+
+}
+
+.control-label{
+  height: 34px;
+  width: 100;
+
+  display:inline-block;
+  margin-left: 300px;       /* This is when the drop down box appears */
+  position: relative;
+  border-radius: 15px;
+}
+
+
+.center{
+  height: 30px;
+  display:inline-block;
+  margin-left: 400px;       /* This is when the drop down box appears */
+  position: absolute;
+  border-radius: 15px;
+  top: 12.3%;
+
+}
+.center1{
+    display: flex;
+    position: absolute;
+    width: 320px;
+    text-align: left;
+    height: 35px;
+    top: 50%;
+    left: 35%;
+    margin-left: -50px;
+    margin-top: -25px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 15px;
+    z-index: 1;
+    color: white;
+
+
+  }
+  .topnav {
+    position: relative;
+    overflow: hidden;
+    background-color:  #5f91ec ;
+    border-radius: 5px;
+    height: 25px;
+
+
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+
+  }
+  
+  
+  .topnav-centered a {
+    align-items: center;
+    position: absolute;
+    float: none;
+    list-style-type: none;
+    margin-right: 50px;
+    font: 16px/2 cursive;
+    top: 50%;
+    left: 10%;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+  }
+  
+
+
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      top: 50%;
+      left: 37%;
+
+      transform: translate(-50%, -50%);
+      border-radius: 15px;
+
+    }
+

@@ -1,0 +1,41 @@
+
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a href="white" class="active">White</a>
+    <a href="blue" class="active">Blue</a>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="control-label" for="Image"></label>
+
+  <select *ngIf="getImages()" [(ngModel)]="selectedImages" (change)="onSelectImages($any($event.target).value)" class="form-control input-lg" id="Image"
+  >
+  <option *ngFor="let Image of getImages()" value= {{Image.value}}>{{Image.name}}</option>
+
+  </select>
+  
+</div>
+<img  class="images" src={{selectedImages}}/>
+  
+
+<router-outlet></router-outlet>
+
+<div class="row">
+  <div class="column">
+    <div class="center">
+      <input type="text" (keyup)="getVal($any($event.target).value)"/>
+    </div>
+  </div>
+  <div class="column">
+    <div class="center1">
+      <h2>{{currentvalue}}</h2>
+
+    </div>
+  </div>
+</div>
+
+
+
